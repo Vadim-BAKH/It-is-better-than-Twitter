@@ -46,6 +46,11 @@ jobs:
       run: |
         pylint .
 
+    - name: Create .env file
+      run: |
+        echo "DB_USER=${{ secrets.DB_USER }}" > .env
+        echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env  
+     
     - name: Docker build and run
       env:
         DB_USER: ${{ secrets.DB_USER }}
@@ -53,13 +58,6 @@ jobs:
         
       run: |
         docker compose up --build -d
-
-   
-
-    - name: Create .env file
-      run: |
-        echo "DB_USER=${{ secrets.DB_USER }}" > .env
-        echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env
 
     - name: Pytest
       run: |
