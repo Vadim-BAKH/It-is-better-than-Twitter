@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75fcaf74-4fe8-4896-8177-bfa4be46d00b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Python_Advanced_Diploma.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/.pylintrc.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/decorator/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/decorator/error_decorator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/follow/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/follow/follower_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/follow/following_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/follow/get_users_follow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/follow/other_subscribe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/follow/subscribe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/follow/unsubscribe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/like/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/like/dislike.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/like/other_user_like.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/media/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/media/get_media_link.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/tweet/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/tweet/create_tweet_fiction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/tweet/delete_tweet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/tweet/process_tweet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/user/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/user/check_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/user/get_user_id.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/business_model/services/user/see_all_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/factories/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/factories/api_key_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/factories/error_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/factories/media_name_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/logs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/schemas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/schemas/error_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/schemas/profile_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/schemas/tape_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/schemas/user_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/secret_mission/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/secret_mission/conf_env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fast_api/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/css/app.45d81840.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/css/chunk-0420bcc4.d6bc3184.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/css/chunk-10e0d5b4.130d80ef.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/css/chunk-6f77c742.8d9a3d9c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/css/chunk-732a3e8c.6334cd6b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/css/chunk-vendors.de691de6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/app.ee2cdef2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/app.ee2cdef2.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-0420bcc4.11441662.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-0420bcc4.11441662.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-10e0d5b4.e80e67b6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-10e0d5b4.e80e67b6.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-6f77c742.f09861a7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-6f77c742.f09861a7.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-732a3e8c.57e36fb4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-732a3e8c.57e36fb4.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-76301fe8.cc56c3b1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-76301fe8.cc56c3b1.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-vendors.398321e0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/static/js/chunk-vendors.398321e0.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supervisord.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/factories_tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/factories_tests/load_media_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/factories_tests/media_testing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/factories_tests/media_testing/птичка.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/factories_tests/request_templates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/all_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/create_media.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/create_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/delete_follow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/dislike.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/follow_and_profile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/get_media.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/no_tweet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/tape.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/template.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/chat_process/users_tweets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_app/test_fast_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_configs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_configs/test_app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_configs/test_database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_configs/test_loguru.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_configs/test_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_configs/test_register_routes.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2tlbGp8SIu2G8kxt480Um7i8BDQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/new-feature-1",
+    "last_opened_file_path": "C:/Users/PC/PycharmProjects/Python_Advanced_Diploma",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\PycharmProjects\Python_Advanced_Diploma" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\PycharmProjects\Python_Advanced_Diploma\tests\test_app\chat_process" />
+      <recent name="C:\Users\PC\PycharmProjects\Python_Advanced_Diploma\tests\factories_tests" />
+      <recent name="C:\Users\PC\PycharmProjects\Python_Advanced_Diploma" />
+      <recent name="C:\Users\PC\PycharmProjects\Python_Advanced_Diploma\fast_api\factories" />
+      <recent name="C:\Users\PC\PycharmProjects\Python_Advanced_Diploma\fast_api\tests\test_app" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75fcaf74-4fe8-4896-8177-bfa4be46d00b" name="Changes" comment="" />
+      <created>1740929514930</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740929514930</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

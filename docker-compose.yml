@@ -1,0 +1,78 @@
+
+services:
+  fastapi:
+    container_name: fastapi
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - media_files:/usr/share/nginx/html/static/media
+#    environment:
+#      DB_USER: ${DB_USER}
+#      DB_PASSWORD: ${DB_PASSWORD}
+    networks:
+      - mynetwork
+
+  nginx:
+    container_name: nginx
+    build: ./nginx
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - media_files:/usr/share/nginx/html/static/media
+    depends_on:
+      - fastapi
+    networks:
+      - mynetwork
+
+  db:
+    image: postgres:latest
+    container_name: tweet
+    restart: always
+    shm_size: 128mb
+    environment:
+
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: twitter_db
+
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '3'
+    networks:
+      - mynetwork
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "${DB_USER}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  db_test:
+    image: postgres:latest
+    container_name: test
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: test_db
+    ports:
+      - "5433:5432" # 5433 is the port for the test database
+    restart: always
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+
+volumes:
+  media_files:
+  postgres_data:
+
+
