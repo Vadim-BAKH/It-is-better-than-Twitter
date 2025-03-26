@@ -15,6 +15,7 @@ async def see_tweet_tape(db: AsyncSession) -> tape_schema.UserFeedResponse:
     """Получает ленту твитов, отсортированных по количеству лайков"""
 
     # Подзапрос для подсчета количества лайков
+    # pylint: disable=E1102
     subquery_likes = select(
         TweetLike.tweet_id, func.count(TweetLike.id).label("like_count")
     ).group_by(TweetLike.tweet_id).subquery()
