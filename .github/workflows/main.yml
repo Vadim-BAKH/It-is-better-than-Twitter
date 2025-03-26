@@ -1,0 +1,71 @@
+name: Python FastApi CI/CD
+
+on:
+  push:
+    branches:
+      - feature/new-feature
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - name: Set up Python 3.13
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.13'
+
+    - name: Upgrade pip
+      run: |
+        pip install --upgrade pip
+
+    - name: Install dependencies
+      run: |
+          pip install -r requirements.txt
+    
+
+    - name: Run flake8
+      run: |
+        flake8 . 
+        flake8 . 
+
+    - name: Run ruff
+      uses: astral-sh/ruff-action@v3
+
+    - name: Run isort
+      run: |
+        isort .
+
+    - name: Run pylint
+      run: |
+        pylint .
+
+    - name: Docker build and run
+      env:
+        DB_USER: ${{ secrets.DB_USER }}
+        DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        
+      run: |
+        docker compose up --build -d
+
+   
+
+    - name: Create .env file
+      run: |
+        echo "DB_USER=${{ secrets.DB_USER }}" > .env
+        echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env
+
+    - name: Pytest
+      run: |
+        pytest .
+
+
+    - name: Finish workflow
+      run: |
+        docker compose down -v
