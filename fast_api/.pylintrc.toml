@@ -1,0 +1,2 @@
+[tool.pylint.typecheck]
+ignored-modules = ["sqlalchemy.sql.functions"]
