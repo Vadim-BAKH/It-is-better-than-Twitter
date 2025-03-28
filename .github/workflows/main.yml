@@ -49,12 +49,17 @@ jobs:
     - name: Create .env file
       run: |
         echo "DB_USER=${{ secrets.DB_USER }}" > .env
-        echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env  
-     
+        echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env
+        echo "DB_PORT=${{ secrets.DB_PORT }}" >> .env
+        echo "SENTRY_DSN=${{ secrets.SENTRY_DSN }}" >> .env
+
     - name: Docker build and run
       env:
         DB_USER: ${{ secrets.DB_USER }}
         DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        DB_PORT: ${{ secrets.DB_PORT }}
+        SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+
         
       run: |
         docker compose up --build -d
