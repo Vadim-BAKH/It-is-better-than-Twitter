@@ -5,9 +5,10 @@ from typing import AsyncGenerator
 from sqlalchemy.ext.asyncio import (AsyncSession, async_sessionmaker,
                                     create_async_engine)
 
-from fast_api.secret_mission.conf_env import DB_PASSWORD, DB_USER
+from fast_api.secret_mission.conf_env import DB_PASSWORD, DB_PORT, DB_USER
 
-DB_URI = f"postgresql+asyncpg://{DB_USER}:{DB_PASSWORD}@db:5432/twitter_db"
+DB_URI = \
+    f"postgresql+asyncpg://{DB_USER}:{DB_PASSWORD}@db:{DB_PORT}/twitter_db"
 
 TEST_DB_URI = "postgresql+asyncpg://test:test@localhost:5433/test_db"
 

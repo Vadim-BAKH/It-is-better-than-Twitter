@@ -3,7 +3,7 @@ Diploma PET project FAST API
 
 
 ## Описание проекта
-Проект представляет собой веб-приложение, построенное с использованием FastAPI, Nginx и PostgreSQL. Он организован по архитектурному паттерну MVC, что позволяет разделить логику приложения на три основные компоненты: модели, представления и контроллеры.
+Проект представляет собой веб-приложение, построенное с использованием FastAPI, Nginx, Uvicorn, Sentry, SQLAlchemy и PostgreSQL. Он организован по архитектурному паттерну MVC, что позволяет разделить логику приложения на три основные компоненты: модели, представления и контроллеры.
 
 
 ### Структура проекта
@@ -67,13 +67,24 @@ Diploma PET project FAST API
 
 *bash: git clone git@github.com:Vadim-BAKH/It-is-better-than-Twitter.git
 
-**Секретные переменные**
 
-*создать файл .env c указанием:*
+### Переменные окружения
+Конфигурация переменных окружения задана в fast_api.secret_mission.conf_env.py.
+
+**Переменные окружения:**
+
+    DB_USER = # Логин для входа в базу psql
+    DB_PASSWORD = # Пароль для входа в базу psql
+    DB_PORT = # Порт для прослушивания базы psql
+    SENTRY_DSN = # dns необходимо получить при создании своего проекта fastapi на  https://docs.sentry.io/platforms/python
+    MAIN_USER = # Любой user_id для входа на страничку пользователя
+
+**Необходимо создать файл .env c указанием:**
 
      DB_USER=ваш логин
-     
      DB_PASSWORD=ваш пароль
+     DB_PORT=ваш порт
+     SENTRY_DSN=полученный dns
 
 
 ### Работа с приложением
@@ -100,8 +111,7 @@ Diploma PET project FAST API
 ![image](https://github.com/user-attachments/assets/0c2cb508-7a22-45b5-adc8-9375b2158e9c)
 
 **Диаграмма таблиц**
-
-
+![image](https://github.com/user-attachments/assets/087376a0-71ec-4f84-b91c-6f217c4c06cc)
 
 
 #### Тестировние
@@ -122,7 +132,8 @@ Diploma PET project FAST API
 
 **Общий тест**
 
-*bash: pytest -v*
+*bash: pytest*
+![image](https://github.com/user-attachments/assets/44567076-fa63-4ad2-ba5c-5cebbcb52730)
 
 
 #### Процесс работы приложения
@@ -160,6 +171,12 @@ __twitter-clone__
 ![image](https://github.com/user-attachments/assets/fefbb31b-b99a-47ea-80f0-01352b844253)
 Открывает свой профиль:
 ![image](https://github.com/user-attachments/assets/4fe032cf-f8d0-405c-bc9d-d2479b640a06)
+
+#### Sentry мониторинг
+В зависимости от типа account возможен мониторинг Traces приложения:
+![image](https://github.com/user-attachments/assets/7289d0dc-fd12-4b27-9f6f-2277e9bda741)
+![image](https://github.com/user-attachments/assets/3fadd8f8-2ca8-4632-9317-59f4ca9f71c5)
+ Все ункциональные возможности мониторинга можно рассмотреть на  https://docs.sentry.io/platforms/python
 
 
 ### Права
