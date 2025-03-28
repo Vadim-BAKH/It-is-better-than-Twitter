@@ -132,7 +132,7 @@ Diploma PET project FAST API
 
 **Общий тест**
 
-*bash: pytest -v*
+*bash: pytest*
 ![image](https://github.com/user-attachments/assets/44567076-fa63-4ad2-ba5c-5cebbcb52730)
 
 
