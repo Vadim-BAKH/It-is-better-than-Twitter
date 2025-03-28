@@ -95,7 +95,7 @@ Diploma PET project FAST API
 
 *bash: docker compose up --build -d
 
-**Отключене**
+**Отключение**
 
 *bash: docker compose down*
 
@@ -114,7 +114,7 @@ Diploma PET project FAST API
 ![image](https://github.com/user-attachments/assets/087376a0-71ec-4f84-b91c-6f217c4c06cc)
 
 
-#### Тестировние
+#### Тестирование
 Приложение протестировано с использованием пайплайна CI/CD на GitHub Actions.
 Для тестирования используется независимая база данных Posgresql и фич dependency_overrides от fastapi
 для переопределения сессий с основной на тестовую
@@ -142,9 +142,9 @@ __FastAPI-Swagger UI__
 
 *Документация находится по адресу: http://http://127.0.0.1:8000/docs*
 
-В докуметации отражена логика работы с данными. В том числе, перед работой в самом 
+В документации отражена логика работы с данными. В том числе, перед работой в самом 
 приложении необходимо создать пользователей. Для этого в форме запроса необходимо указать
-только "name": "api_key" создаётся атоматически с технологией uuid и sha256:
+только "name": "api_key" создаётся автоматически с технологией uuid и sha256:
 ![image](https://github.com/user-attachments/assets/7d6b085a-8a7b-462a-84e0-8250c7e2e744)
 Так же можно просмотреть всех пользователей:
 ![image](https://github.com/user-attachments/assets/df9d6028-7842-4528-a9ca-a8e50e36d8c9)
@@ -176,7 +176,7 @@ __twitter-clone__
 В зависимости от типа account возможен мониторинг Traces приложения:
 ![image](https://github.com/user-attachments/assets/7289d0dc-fd12-4b27-9f6f-2277e9bda741)
 ![image](https://github.com/user-attachments/assets/3fadd8f8-2ca8-4632-9317-59f4ca9f71c5)
- Все ункциональные возможности мониторинга можно рассмотреть на  https://docs.sentry.io/platforms/python
+ Все функциональные возможности мониторинга можно рассмотреть на  https://docs.sentry.io/platforms/python
 
 
 ### Права
