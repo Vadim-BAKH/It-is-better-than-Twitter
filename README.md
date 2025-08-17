@@ -1,5 +1,5 @@
 # It-is-better-than-Twitter
-Diploma PET project FAST API
+PET project FAST API
 
 
 ## Описание проекта
